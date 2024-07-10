@@ -285,3 +285,107 @@ const multi = (x, y)=> x * y;
 
 console.log(applyOperation(5,6, addd));//11
 console.log(applyOperation(5,6, multi));//30
+
+
+// Function expression esme hm gre() ki function se uper call nhi kr skte h 
+const gre = function() {
+  console.log("Hello! Hello!");
+};
+gre(); 
+ // jese esko hm function ke uper bhi call kr skte h 
+ gree();
+ function gree() {
+  console.log("function ke uper bhi call kra skte h");
+};
+gree();
+
+// Arrow function sigle line 
+const addAdd = (l,k) => l + k;
+ console.log(addAdd(8,6));
+
+// Arrow function multiple line code
+const addp = (a, b) => {
+  const sum = a + b;
+  return sum;
+};
+console.log(addp(10,18));
+
+// Default Parameters 
+function greets(name="Guest"){
+  console.log(`Hello, ${name}!`);
+}
+greets();
+greets('Shyam');
+
+function pos(a=0, b=0){
+  return a*b;
+}
+console.log(pos(11,18));
+
+// Rest parameters
+function total(...number){
+  return number.reduce((f,b)=>f+b,0);
+};
+console.log(total(265,5,65,98,6,5,2,365,89,45,17,63));
+
+function multiple(mult, ...numb){
+  return numb.map(numb => numb * mult);
+}
+console.log(multiple(5,6,3,53,3,3));
+
+function same(r){
+  return r*r;
+};
+console.log(same(11));
+
+function calculateTotal(price, tax = 15, discount = 5) {
+  console.log(price + tax - discount);
+}
+calculateTotal(105);
+
+function calculateValue(d,g=5,h=30){
+  console.log(d+g*h);
+}
+calculateValue(50);
+
+function repeat(n,action){
+  for(let i=5; i<=n; i++){
+    action (i);
+  }
+}
+repeat(50,console.log)
+
+let mohan = {
+  printNumbers: function() {
+      for (let i = 3; i <= 30; i+=3) {
+          console.log(i);
+      }
+  }
+};
+
+mohan.printNumbers();
+
+//enter the number for which you want the multip;ication table
+function printTable() {
+  const number = parseInt(prompt("Enter the number for which you want the multiplication table:"));
+  console.log(`Multiplication Table for ${number}:`);
+  for (let i = 1; i <= 10; i++) {
+      console.log(`${number} x ${i} = ${number * i}`);
+  }
+}
+
+// Call the function
+printTable();
+
+function abcd() {
+  const numbe = parseInt(prompt("Enter your number:"));
+  console.log(`Multiplication table for ${numbe}:`);
+  for (let a = 1; a <= 10; a++) {
+    console.log(`${numbe} * ${a} = ${numbe * a}`);
+  }
+}
+
+// Call the function
+abcd();
+
+
