@@ -204,32 +204,6 @@ function square(x) {
 console.log(square(4)); // 16
 console.log(square(4)); // 16        
   
-
-// function applyOperation(a, b, operation) {
-//   return operation(a, b);
-// }
-
-// const add = (x, y) => x + y;
-// const multiply1 = (x, y) => x * y;
-
-// console.log(applyOperation(3, 4, add)); // 7
-// console.log(applyOperation(3, 4, multiply1)); // 12            
-  
-
-// function divide(a, b) {
-//   if (b === 0) {
-//       throw new Error('Division by zero is not allowed.');
-//   }
-//   return a / b;
-// }
-
-// try {
-//   console.log(divide(4, 2)); // 2
-//   console.log(divide(4, 0)); // Error
-// } catch (error) {
-//   console.error(error.message); // Division by zero is not allowed.
-// }           
-  
     
 function addValue(a,b){
   return a+b
@@ -366,26 +340,70 @@ let mohan = {
 mohan.printNumbers();
 
 //enter the number for which you want the multip;ication table
-function printTable() {
-  const number = parseInt(prompt("Enter the number for which you want the multiplication table:"));
-  console.log(`Multiplication Table for ${number}:`);
-  for (let i = 1; i <= 10; i++) {
-      console.log(`${number} x ${i} = ${number * i}`);
-  }
+// function printTable() {
+//   const number = parseInt(prompt("Enter the number for which you want the multiplication table:"));
+//   console.log(`Multiplication Table for ${number}:`);
+//   for (let i = 1; i <= 10; i++) {
+//       console.log(`${number} x ${i} = ${number * i}`);
+//   }
+// }
+
+// // Call the function
+// printTable();
+
+// function abcd() {
+//   const numbe = parseInt(prompt("Enter your number:"));
+//   console.log(`Multiplication table for ${numbe}:`);
+//   for (let a = 1; a <= 10; a++) {
+//     console.log(`${numbe} * ${a} = ${numbe * a}`);
+//   }
+// }
+
+// // Call the function
+// abcd();
+
+function button(){
+    console.log('Hello world!')
+};
+button();
+ 
+function shortFunction(a){
+  return a*a;
 }
+ console.log(shortFunction(20));
 
-// Call the function
-printTable();
+ const multiple1 = (a, b)=> a*b;
+ console.log(multiple1(12,6));
 
-function abcd() {
-  const numbe = parseInt(prompt("Enter your number:"));
-  console.log(`Multiplication table for ${numbe}:`);
-  for (let a = 1; a <= 10; a++) {
-    console.log(`${numbe} * ${a} = ${numbe * a}`);
-  }
-}
+ function defoult(a='guest',b='going to jaipur'){
+    return `Hello... ${a} hello sir .... ${b}!`
+ }
+ console.log(defoult());
+ console.log(defoult('welcome','not go to jaipur'));
+//rest function me jo hm value dete h us value ko arrow me convate krvate h 
+ function rest1(...h){
+     console.log(h);
+ };
+ rest1(2,5,8,3,6,9,1,4,7);
 
-// Call the function
-abcd();
+ function destruction({firstName, lastName}){
+  return `${firstName}, ${lastName}`;
+ }
+ const userss = {
+  firstName: 'mohan lal',
+  lastName: 'prajapat',
+  age: 30,
+  city: 'jaipur',
+ };
+ console.log(destruction(userss));
+
+ function squars(t){
+  return t*t;
+  // return t**t;
+  // return t-t;
+  // return t+t;
+  // return t/t;
+ };
+ console.log(squars(16));
 
 
