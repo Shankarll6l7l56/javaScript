@@ -406,4 +406,70 @@ function shortFunction(a){
  };
  console.log(squars(16));
 
+ //Function Declaration
+ function declaration4(g,k){
+     return g*k;
+  // return g-k;
+  // return g+k;
+  // return g/k;
+ };
+  console.log(declaration4(25,15));
 
+  // Function Expression 
+  const expression = function(g,k){
+    // return g*k;
+    // return g-k;
+    // return g+k;
+    return g/k;
+  };
+  console.log(expression(50,15));
+
+  // Arrow Functions
+  const arrowFunction = (j,s) => j*s;
+  console.log(arrowFunction(5,6));
+  // Default Parameters
+  function defaulta(r='sohan'){
+    return `Hello, ${r}..ji`
+  };
+  console.log(defaulta());
+  console.log(defaulta('mohan'));
+  // Rest Parameters
+  function rest4(...m){
+    console.log(m);
+  };
+  rest4(5,6,8,9,2,3,6);
+
+  // Destructuring Parameters
+
+  function destruc({firstName, lastName}){
+    return `${firstName} ${lastName}`;
+   }
+   const data = {
+    firstName: 'mahender',
+    lastName: 'yadav',
+    age: 15,
+    city: 'jaipur',
+   };
+   console.log(destruc(data));
+
+   //pure function
+   function pures(u){
+    return u*u;
+   };
+   console.log(pures(32));
+   // Destructuring Parameters
+   function pqrs({age,name,date}){
+    return `${age} ${name} ${date}`;
+   };
+   const userNames = {
+    name:'sohan lal',
+    age:21,
+    date:'10/05/2020',
+    number:9632583698,
+    id:159357852,
+   };
+   console.log(pqrs(userNames));
+
+   //
+   
+  
